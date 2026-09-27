@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>과학 땅따먹기</title>
+<link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+<header class="top">
+  <h1 id="ttl">🗺️ 과학 땅따먹기</h1>
+  <span class="badge" id="badge"></span>
+  <span class="spacer"></span>
+  <span class="clock" id="clock">--:--</span>
+  <button class="btn mini" id="bPause">⏸ 멈춤</button>
+  <button class="btn mini" id="bUndo">↩ 되돌리기</button>
+  <button class="btn mini" id="bRule">📖 규칙</button>
+  <button class="btn mini" id="bEnd">🏁 결과 보기</button>
+  <a class="home" href="index.html">← 처음 화면</a>
+</header>
+
+<main class="land">
+  <section class="board" id="board" aria-label="땅 지도"></section>
+  <aside class="side">
+    <div class="turnbox" id="turnbox">-</div>
+    <div class="sb"><h3>🏆 점수판</h3><div id="score"></div></div>
+    <div class="sb rules" id="rulesMini">
+      <b>진행</b> 차례 모둠이 칸을 고른다 → 모두 화이트보드에 답을 쓴다 → 정답 공개 → 맞힌 모둠을 누른다.<br>
+      ⭐ 칸은 점수 2배 · 🚩 한 단원 세 칸을 모두 차지하면 +2
+    </div>
+  </aside>
+</main>
+
+<div id="dlgRoot"></div>
+
+<script src="js/questions1.js"></script>
+<script src="js/questions2.js"></script>
+<script src="js/questions3.js"></script>
+<script src="js/questions_fig.js"></script>
+<script src="js/common.js"></script>
+<script src="js/figures.js"></script>
+<script src="js/land.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>문제 은행 · 복습 게임</title>
+<link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+<header class="top">
+  <h1>📚 문제 은행 (정답·해설)</h1>
+  <span class="badge">⚠ 학생에게 보이지 않게 주의하세요</span>
+  <span class="spacer"></span>
+  <a class="home" href="index.html">← 처음 화면</a>
+</header>
+<main class="wrap">
+  <div class="panel" style="margin-top:0">
+    <div class="actions" style="margin-top:0">
+      <span>학년</span>
+      <select id="fG"><option value="0">전체</option><option value="1">중1 (1~7)</option><option value="2">중2 (8~16)</option><option value="3">중3 (17~24)</option></select>
+      <span>단원</span><select id="fU"></select>
+      <span>난이도</span>
+      <select id="fL"><option value="0">전체</option><option value="1">하</option><option value="2">중</option><option value="3">상</option></select>
+      <span>종류</span>
+      <select id="fS"><option value="">전체</option><option value="txt">글 문제</option><option value="fig">그림·그래프 문제</option></select>
+      <span class="note" id="cnt"></span>
+      <button class="btn ghost mini" onclick="window.print()">🖨 인쇄</button>
+    </div>
+    <p class="note">※ 문제는 성취기준 평가기준(상·중·하)에 맞춰 만들었습니다. 수업 전에 훑어보시고, 고칠 곳은 <code>js/questions1~3.js</code>(글 문제) · <code>js/questions_fig.js</code>(그림 문제, 숫자를 고치면 그림도 함께 바뀝니다)에서 고치면 됩니다.</p>
+  </div>
+  <div id="bankOut"></div>
+</main>
+<script src="js/questions1.js"></script>
+<script src="js/questions2.js"></script>
+<script src="js/questions3.js"></script>
+<script src="js/questions_fig.js"></script>
+<script src="js/common.js"></script>
+<script src="js/figures.js"></script>
+<script src="js/bank.js"></script>
+</body>
+</html>

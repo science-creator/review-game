@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>탈출 기록 · 복습 게임</title>
+<link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+<header class="top">
+  <h1>🏅 탈출 기록 정리</h1>
+  <span class="badge">화면에 정답이 나오지 않아요 (문제 은행은 따로 있어요)</span>
+  <span class="spacer"></span>
+  <a class="home" href="index.html">← 처음 화면</a>
+</header>
+<main class="wrap">
+  <div class="panel" style="margin-top:0">
+    <h3>모둠별 인증 코드를 붙여 넣으세요</h3>
+    <p class="note">각 모둠 기기의 기록 카드에 나온 코드(예: RG34-5721-EYF)를 한 줄에 하나씩 붙여 넣으면 순위가 나옵니다.
+      통과한 방이 많은 순, 같으면 시간이 짧은 순입니다. 모둠 화면을 사진으로 찍거나 코드를 말로 불러 주면 선생님이 직접 입력해도 됩니다.</p>
+    <textarea class="codes" id="codes" placeholder="RG34-5721-EYF&#10;RG31-4C10-D2Q"></textarea>
+    <div class="actions"><button class="btn" id="bRank">순위 만들기</button><button class="btn ghost" onclick="window.print()">🖨 인쇄</button></div>
+    <div id="rankOut"></div>
+  </div>
+</main>
+<script src="js/common.js"></script>
+<script src="js/teacher.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>중학교 과학 복습 게임</title>
+<link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+<header class="top">
+  <h1>🎮 중학교 과학 복습 게임</h1>
+  <span class="badge">학기말 · 6차시</span>
+  <span class="spacer"></span>
+  <a class="home" href="teacher.html">🏅 탈출 기록</a> <a class="home" href="bank.html">📚 문제 은행</a>
+</header>
+<main class="wrap">
+  <div class="hero">
+    <h2>3년의 과학, 게임으로 총정리!</h2>
+    <p>2015 개정 교육과정 성취기준(중1~3, 24개 단원) · 성취기준별 상·중·하 평가기준에 맞춘 글 문제 144문항 + 그림·그래프 문제 72문항</p>
+  </div>
+
+  <div class="cards">
+    <a class="card" href="land.html?s=1">
+      <span class="tag">1차시 · 땅따먹기</span>
+      <h3>🗺️ 중학교 1학년 편</h3>
+      <p>교사 화면 1대 + 모둠 화이트보드. 단원 칸을 차지하고 뺏는 모둠 대결.</p>
+      <div class="chips" id="c1"></div>
+    </a>
+    <a class="card" href="land.html?s=2">
+      <span class="tag">2차시 · 땅따먹기</span>
+      <h3>🗺️ 중학교 2학년 편</h3>
+      <p>같은 규칙, 중2 단원 9개. 칸이 많아 더 치열해요.</p>
+      <div class="chips" id="c2"></div>
+    </a>
+    <a class="card" href="escape.html?s=3">
+      <span class="tag escape">3차시 · 탈출 게임</span>
+      <h3>🔐 중3 1구역 탈출</h3>
+      <p>모둠 기기 1대씩. 방 4개 + 최종 탈출구. 화학·날씨·운동·자극.</p>
+      <div class="chips" id="c3"></div>
+    </a>
+    <a class="card" href="escape.html?s=4">
+      <span class="tag escape">4차시 · 탈출 게임</span>
+      <h3>🎓 중3 2구역 + 중학교 종합 탈출</h3>
+      <p>유전·에너지·우주·기술 방 4개 + 1~3학년 종합 졸업 탈출구.</p>
+      <div class="chips" id="c4"></div>
+    </a>
+    <a class="card" href="land.html?s=5">
+      <span class="tag">5차시 · 땅따먹기 (그림)</span>
+      <h3>🖼️ 그림·그래프 땅따먹기</h3>
+      <p>그래프·회로·입자 모형·원자·파형 그림을 읽고 푸는 땅따먹기. 중1~3 단원 8개.</p>
+      <div class="chips" id="c5"></div>
+    </a>
+    <a class="card" href="escape.html?s=6">
+      <span class="tag escape">6차시 · 탈출 게임 (그림)</span>
+      <h3>🔍 그림·그래프 탈출</h3>
+      <p>지구 내부·달의 위치·수온 그래프·유전 표를 읽어야 열리는 방 4개 + 최종 탈출구.</p>
+      <div class="chips" id="c6"></div>
+    </a>
+  </div>
+
+  <div class="panel">
+    <h3>📋 수업 준비</h3>
+    <ul>
+      <li><b>땅따먹기(1·2·5차시)</b> — 교사 컴퓨터 1대를 TV·전자칠판에 연결합니다. 모둠마다 작은 화이트보드와 펜이 필요합니다(7모둠 기준).</li>
+      <li><b>탈출(3·4·6차시) — 방법 A(서버, 권장)</b> — 이 컴퓨터에 파이썬이 설치돼 있으면 <code>로컬서버_실행.bat</code>을 더블클릭합니다. 뜨는 창에 모둠 기기가 접속할 주소가 나옵니다. 모둠 기기는 그 주소를 교실 와이파이로 열면 됩니다. 파일을 복사할 필요가 없고, 문제를 고쳐도 새로고침만 하면 됩니다.</li>
+      <li><b>탈출 — 방법 B(폴더 복사, 예비용)</b> — 서버가 안 되거나(학교 와이파이의 기기 간 통신 차단 등) 파이썬이 없으면, 이 폴더를 모둠 기기마다 복사해 <code>escape.html?s=3</code> · <code>?s=4</code> · <code>?s=6</code>을 더블클릭으로 엽니다. 인터넷·와이파이가 필요 없어 가장 안전합니다.</li>
+      <li><b>탈출 기록</b> — 끝나면 각 모둠 화면에 인증 코드가 나옵니다. <a href="teacher.html">탈출 기록</a> 화면에 붙여 넣거나 직접 입력하면 순위가 나옵니다(이 화면에는 정답이 없습니다).</li>
+      <li><b>문제 확인</b> — 정답·해설은 <a href="bank.html">문제 은행</a>에서 수업 전에 미리 볼 수 있습니다. 학생 앞에서는 열지 마세요.</li>
+    </ul>
+    <p class="note">진행 중 화면을 새로고침해도 기록이 남아 이어집니다(같은 창 안에서). 창을 닫으면 사라집니다.</p>
+    <p class="note">⚠ 서버 방식(방법 A)은 수업 전에 반드시 한 번 시험해 보세요 — 모둠 기기 1대로 미리 접속해 화면이 뜨는지 확인합니다. 학교 와이파이에 "AP 격리(기기 간 통신 차단)"가 걸려 있으면 접속이 안 될 수 있습니다. 그럴 땐 방법 B로 바꾸면 됩니다.</p>
+  </div>
+</main>
+<script src="js/questions1.js"></script>
+<script src="js/questions2.js"></script>
+<script src="js/questions3.js"></script>
+<script src="js/questions_fig.js"></script>
+<script src="js/common.js"></script>
+<script>
+  [[1, "c1"], [2, "c2"], [3, "c3"], [4, "c4"], [5, "c5"], [6, "c6"]].forEach(function (p) {
+    var c = document.getElementById(p[1]), s = RG.SESSIONS[p[0]];
+    var units = s.units || s.rooms.map(function (r) { return r.u; });
+    units.forEach(function (u) { c.appendChild(RG.el("span", "chip", RG.UNITS[u].i + " " + RG.UNITS[u].n)); });
+    if (s.final) c.appendChild(RG.el("span", "chip", "🚪 " + s.final.name));
+  });
+</script>
+</body>
+</html>
