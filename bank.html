@@ -8,8 +8,8 @@
 </head>
 <body>
 <header class="top">
-  <h1>📚 문제 은행 (정답·해설)</h1>
-  <span class="badge">⚠ 학생에게 보이지 않게 주의하세요</span>
+  <h1>📚 문제 은행 (정답·해설) — 땅따먹기 전용</h1>
+  <span class="badge">⚠ 학생에게 보이지 않게 주의하세요 · 탈출 게임 문제는 각 탈출 저장소에서</span>
   <span class="spacer"></span>
   <a class="home" href="index.html">← 처음 화면</a>
 </header>
@@ -17,7 +17,7 @@
   <div class="panel" style="margin-top:0">
     <div class="actions" style="margin-top:0">
       <span>학년</span>
-      <select id="fG"><option value="0">전체</option><option value="1">중1 (1~7)</option><option value="2">중2 (8~16)</option><option value="3">중3 (17~24)</option></select>
+      <select id="fG"><option value="0">전체</option><option value="1">중1 (1~7)</option><option value="2">중2 (8~16)</option><option value="3">중3 (17·19 그림만)</option></select>
       <span>단원</span><select id="fU"></select>
       <span>난이도</span>
       <select id="fL"><option value="0">전체</option><option value="1">하</option><option value="2">중</option><option value="3">상</option></select>
@@ -26,13 +26,13 @@
       <span class="note" id="cnt"></span>
       <button class="btn ghost mini" onclick="window.print()">🖨 인쇄</button>
     </div>
-    <p class="note">※ 문제는 성취기준 평가기준(상·중·하)에 맞춰 만들었습니다. 수업 전에 훑어보시고, 고칠 곳은 <code>js/questions1~3.js</code>(글 문제) · <code>js/questions_fig.js</code>(그림 문제, 숫자를 고치면 그림도 함께 바뀝니다)에서 고치면 됩니다.</p>
+    <p class="note">※ 문제는 성취기준 평가기준(상·중·하)에 맞춰 만들었습니다. 수업 전에 훑어보시고, 고칠 곳은 <code>js/questions1~2.js</code>(글 문제) · <code>js/questions_fig.js</code>(그림 문제, 숫자를 고치면 그림도 함께 바뀝니다)에서 고치면 됩니다.</p>
+    <p class="note">※ 이 저장소에는 땅따먹기(1·2·5차시) 문제만 있습니다. 탈출 게임(3·4·6차시) 정답은 해당 탈출 저장소의 bank.html 에서 확인하세요(유출 방지를 위해 분리했습니다).</p>
   </div>
   <div id="bankOut"></div>
 </main>
 <script src="js/questions1.js"></script>
 <script src="js/questions2.js"></script>
-<script src="js/questions3.js"></script>
 <script src="js/questions_fig.js"></script>
 <script src="js/common.js"></script>
 <script src="js/figures.js"></script>

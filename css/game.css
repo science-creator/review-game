@@ -215,3 +215,7 @@ table.punnett td { background: #fff; font-weight: 800; }
   .dlg.hasfig .qtext { font-size: 30px; margin: 8px 0 12px; }
   .dlg.hasfig .punn { justify-self: center; }
 }
+
+/* ---------- 탈출 게임 카드(외부 저장소) ---------- */
+.card.escapecard { border-color: #fcd34d; background: #fffdf5; }
+.card.escapecard:hover { border-color: #f59e0b; }
